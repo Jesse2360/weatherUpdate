@@ -26,8 +26,8 @@
 
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-lg-3 bg-light">
-          <h5 class="mt-1">Search a City:</h5>
+        <aside class="col-lg-3 bg-secondary">
+          <h5 class="mt-1 text-white">Search a City:</h5>
           <div class="form-inline form-group">
             <input class="form-control" type="text" id="searchValue"/>
             <button class="btn btn-primary" id="search-button">
@@ -41,14 +41,13 @@
         <div class="col-lg-9">
 
           <div id="today" class="mt-3">
-            <div class="card">
+            <div class="card bg-primary">
               <div class="card-body">
-                <h4 class="card-title" id="titleToday">city 
-                  </h4>
-                  <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png);" id="todayIcon" alt=" todayIcon">
-                  <p class="card-text" id="tempToday">Temperature: </p>
-                  <p class="card-text" id="humidityToday">Humidity: </p>
-                  <p class="card-text" id="windSpeedToday">Wind Speed: </p>
+                <h4 class="card-title text-white" id="titleToday">City</h4>
+                  <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png);" id="todayIcon" alt="Icon">
+                  <p class="card-text text-white" id="tempToday">Temperature: </p>
+                  <p class="card-text text-white" id="humidityToday">Humidity: </p>
+                  <p class="card-text text-white" id="windSpeedToday">Wind Speed: </p>
               </div>
             </div>
           </div>
@@ -60,8 +59,8 @@
             <div class="col-md-5" >
               <div class="card bg-warning text-black border-dark">
                 <div class="card-body p-2">
-                  <h5 class="card-title" id="date1">date</h5>
-                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img1" alt="icon">
+                  <h5 class="card-title" id="date1">Date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img1" alt="Icon">
                     <p class="card-text" id="windSpeed1">Wind Speed:</p>
                     <p class="card-text" id="humidity1">Humidity:</p>
                   <p class="card-text" id="temp1">Temp:</p>
@@ -70,10 +69,10 @@
             </div>
 
             <div class="col-md-5" >
-              <div class="card bg-primary text-black border-dark">
+              <div class="card bg-warning text-black border-dark">
                 <div class="card-body p-2">
-                  <h5 class="card-title" id="date2">date</h5>
-                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img2" alt="icon">
+                  <h5 class="card-title" id="date2">Date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img2" alt="Icon">
                     <p class="card-text" id="windSpeed2">Wind Speed:</p>
                     <p class="card-text" id="humidity2">Humidity:</p>
                   <p class="card-text" id="temp2">Temp:</p>
@@ -84,8 +83,8 @@
             <div class="col-md-5" >
               <div class="card bg-warning text-black border-dark">
                 <div class="card-body p-2">
-                  <h5 class="card-title" id="date3">date</h5>
-                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img3" alt="icon">
+                  <h5 class="card-title" id="date3">Date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img3" alt="Icon">
                     <p class="card-text" id="windSpeed3">Wind Speed:</p>
                     <p class="card-text" id="humidity3">Humidity:</p>
                   <p class="card-text" id="temp3">Temp:</p>
@@ -96,8 +95,8 @@
             <div class="col-md-5" >
               <div class="card bg-warning text-black border-dark">
                 <div class="card-body p-2">
-                  <h5 class="card-title" id="date4">date</h5>
-                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img4" alt="icon">
+                  <h5 class="card-title" id="date4">Date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img4" alt="Icon">
                     <p class="card-text" id="windSpeed4">Wind Speed:</p>
                     <p class="card-text" id="humidity4">Humidity:</p>
                   <p class="card-text" id="temp4">Temp:</p>
@@ -108,8 +107,8 @@
             <div class="col-md-5" >
               <div class="card bg-warning text-black border-dark">
                 <div class="card-body p-2">
-                  <h5 class="card-title" id="date5">date</h5>
-                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img5" alt="icon">
+                  <h5 class="card-title" id="date5">Date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img5" alt="Icon">
                     <p class="card-text" id="windSpeed5">Wind Speed:</p>
                     <p class="card-text" id="humidity5">Humidity:</p>
                   <p class="card-text" id="temp5">Temp:</p>
