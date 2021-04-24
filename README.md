@@ -14,3 +14,5 @@ CREATED WITH:
 ・GitHub
 
 [link](https://jesse2360.github.io/weatherUpdate/)
+
+![photo](https://github.com/Jesse2360/weatherUpdate/blob/d0379435720a0f9780fe68f33b476d6136666c22/ScreenShot-weather-update.png)
