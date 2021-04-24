@@ -47,5 +47,26 @@ window.addEventListener("load", () => {
                 tempToday.textContent = "Temperature: " + data.main.temp + " °F";   
         })
     })
+    
+    $("#search-button").on("click", function(){
+        localStorage.clear();
+        cityName = $("#searchValue").val().trim()
+        localStorage.setItem("searchValue", cityName)
+        $("#history").html(" ")
+    })
 
+    function cities(){
+
+        var lastcity = localStorage.getItem("searchValue")
+        $("#searchValue").val(lastcity)
+        $("#history").html(lastcity)
+        //var textCity = document.getElementById("searchValueList");
+        //textCity.textContent = listItemCity;
+        //listItemCity.addEventListener("click", function(){
+         //   $("#searchValue").appendChild(listItemCity);
+        //})
+    }
+        cities()
+
+    
 })
