@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
                         var date = document.getElementById("date"+ tileIndex);
                         date.textContent = new Date(data.list[i].dt_txt).toLocaleDateString();
                         var humidity = document.getElementById("humidity"+ tileIndex);
-                        humidity.textContent = "Humidity: " + data.list[i].main.humidity + "%";
+                        humidity.textContent = "Humidity: " + data.list[i].main.humidity + " %";
                         var windSpeed = document.getElementById("windSpeed"+ tileIndex);
                         windSpeed.textContent = "Wind Speed: " + data.list[i].wind.speed + " MPH";
                         var temp = document.getElementById("temp"+ tileIndex);
@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
         .then((data) => {
             console.log(data);
             var titleToday = document.getElementById("titleToday");
-                titleToday.textContent = data.name;
+                titleToday.textContent =`${data.name} (${new Date().toLocaleDateString()})`;
             var todayIcon = document.getElementById("todayIcon");
                 todayIcon.setAttribute("src","https://openweathermap.org/img/w/"+ data.weather[0].icon+ ".png");
             var windSpeedToday = document.getElementById("windSpeedToday");
