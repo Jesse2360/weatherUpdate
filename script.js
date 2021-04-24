@@ -35,8 +35,16 @@ window.addEventListener("load", () => {
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
-            
-            
+            var titleToday = document.getElementById("titleToday");
+                titleToday.textContent = data.name;
+            var todayIcon = document.getElementById("todayIcon");
+                todayIcon.setAttribute("src","https://openweathermap.org/img/w/"+ data.weather[0].icon+ ".png");
+            var windSpeedToday = document.getElementById("windSpeedToday");
+                windSpeedToday.textContent = "Wind Speed: " + data.wind.speed + " MPH";
+            var humidityToday = document.getElementById("humidityToday");
+                humidityToday.textContent = "Humidity: " + data.wind.speed + " %";
+            var tempToday = document.getElementById("tempToday");
+                tempToday.textContent = "Temperature: " + data.main.temp + " °F";   
         })
     })
 
