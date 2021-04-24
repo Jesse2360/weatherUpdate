@@ -51,55 +51,79 @@
               </div>
             </div>
 
-
-
-
-
-
           </div>
 
 
-          <div id="forecast" class="row mt-3"></div>
+          <div id="forecast" class="row mt-3">
             <h4>Next Five Day Forecast:</h4>
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make
-                 up the bulk of the card's content.</p>
+
+            <div class="col-md-5" >
+              <div class="card bg-warning text-black border-dark">
+                <div class="card-body p-2">
+                  <h5 class="card-title" id="date1">date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img1" alt="icon">
+                    <p class="card-text" id="windSpeed1">Wind Speed:</p>
+                    <p class="card-text" id="humidity1">Humidity:</p>
+                  <p class="card-text" id="temp1">Temp:</p>
+                </div>
               </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-md-5" >
+              <div class="card bg-warning text-black border-dark">
+                <div class="card-body p-2">
+                  <h5 class="card-title" id="date2">date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img2" alt="icon">
+                    <p class="card-text" id="windSpeed2">Wind Speed:</p>
+                    <p class="card-text" id="humidity2">Humidity:</p>
+                  <p class="card-text" id="temp2">Temp:</p>
+                </div>
               </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-md-5" >
+              <div class="card bg-warning text-black border-dark">
+                <div class="card-body p-2">
+                  <h5 class="card-title" id="date3">date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img3" alt="icon">
+                    <p class="card-text" id="windSpeed3">Wind Speed:</p>
+                    <p class="card-text" id="humidity3">Humidity:</p>
+                  <p class="card-text" id="temp3">Temp:</p>
+                </div>
               </div>
             </div>
 
-        
+            <div class="col-md-5" >
+              <div class="card bg-warning text-black border-dark">
+                <div class="card-body p-2">
+                  <h5 class="card-title" id="date4">date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img4" alt="icon">
+                    <p class="card-text" id="windSpeed4">Wind Speed:</p>
+                    <p class="card-text" id="humidity4">Humidity:</p>
+                  <p class="card-text" id="temp4">Temp:</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5" >
+              <div class="card bg-warning text-black border-dark">
+                <div class="card-body p-2">
+                  <h5 class="card-title" id="date5">date</h5>
+                  <img src="https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" id="img5" alt="icon">
+                    <p class="card-text" id="windSpeed5">Wind Speed:</p>
+                    <p class="card-text" id="humidity5">Humidity:</p>
+                  <p class="card-text" id="temp5">Temp:</p>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+        </div>
       </div>
+    
+    
+    
     </div>
 
     <script src="script.js"></script>
