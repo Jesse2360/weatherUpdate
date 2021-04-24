@@ -49,24 +49,40 @@ window.addEventListener("load", () => {
     })
     
     $("#search-button").on("click", function(){
-        localStorage.clear();
-        cityName = $("#searchValue").val().trim()
+        //localStorage.clear();
+        var cityName = $("#searchValue").val().trim()
         localStorage.setItem("searchValue", cityName)
-        $("#history").html(" ")
+        cities(cityName)
     })
 
-    function cities(){
+    function cities(searchCity){
 
-        var lastcity = localStorage.getItem("searchValue")
-        $("#searchValue").val(lastcity)
-        $("#history").html(lastcity)
-        //var textCity = document.getElementById("searchValueList");
-        //textCity.textContent = listItemCity;
-        //listItemCity.addEventListener("click", function(){
-         //   $("#searchValue").appendChild(listItemCity);
-        //})
+        var list = document.createElement('li');
+        list.classList.add('list-group-item', 'list-group-item-action');
+        list.id = searchCity;
+        var cityText = searchCity;
+        list.textContent = cityText;
+        list.addEventListener('click', () => {
+            var fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=7d96cc759a2a1cb81c037ea853a85826&units=imperial`
+            fetch(fetchUrl)
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                var titleToday = document.getElementById("titleToday");
+                    titleToday.textContent =`${data.name} (${new Date().toLocaleDateString()})`;
+                var todayIcon = document.getElementById("todayIcon");
+                    todayIcon.setAttribute("src","https://openweathermap.org/img/w/"+ data.weather[0].icon+ ".png");
+                var windSpeedToday = document.getElementById("windSpeedToday");
+                    windSpeedToday.textContent = "Wind Speed: " + data.wind.speed + " MPH";
+                var humidityToday = document.getElementById("humidityToday");
+                    humidityToday.textContent = "Humidity: " + data.wind.speed + " %";
+                var tempToday = document.getElementById("tempToday");
+                    tempToday.textContent = "Temperature: " + data.main.temp + " °F";   
+            })
+        })
+        document.getElementById('history').appendChild(list)
     }
-        cities()
+        
 
     
 })
